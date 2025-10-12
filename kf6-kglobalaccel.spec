@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.18
+%define		kdeframever	6.19
 %define		qtver		5.15.2
 %define		kfname		kglobalaccel
 
 Summary:	Global desktop keyboard shortcuts
 Name:		kf6-%{kfname}
-Version:	6.18.0
+Version:	6.19.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	2a3c41501db988d34cccda1e84acac65
+# Source0-md5:	8f2c4fbd00002209a71fd9b038b14921
 URL:		https://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel >= %{qtver}
@@ -99,7 +99,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{kfname}6_qt.lang
 %defattr(644,root,root,755)
 %doc README.md
-%attr(755,root,root) %{_libdir}/libKF6GlobalAccel.so.*.*.*
+%{_libdir}/libKF6GlobalAccel.so.*.*.*
 %ghost %{_libdir}/libKF6GlobalAccel.so.6
 %{_datadir}/dbus-1/interfaces/kf6_org.kde.KGlobalAccel.xml
 %{_datadir}/dbus-1/interfaces/kf6_org.kde.kglobalaccel.Component.xml
