@@ -52,6 +52,12 @@ KGlobalAccel allows you to have global accelerators that are
 independent of the focused window. Unlike regular shortcuts, the
 application's window does not need focus for them to be activated.
 
+%description -l pl.UTF-8
+KGlobalAccel pozwala ci mieć globalne skróty klawiszowe nie wymagające
+"fokusu" okna. W odróżnieniu do zwykłych skrótów klawiszowych, okno
+aplikacji nie musi być bieżącym oknem na którym jest skupiony kursor,
+aby skróty zostały aktywowane.
+
 %package devel
 Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
